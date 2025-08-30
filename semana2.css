@@ -1,0 +1,81 @@
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --accent: #9333ea; /* morado para diferenciar esta página */
+  --muted: #6b7280;
+  --text: #0f172a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg,#faf5ff 0%, #f3e8ff 100%);
+  color: var(--text);
+}
+
+.wrap {
+  max-width: 800px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin: 0;
+  color: var(--accent);
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  border: 1px solid rgba(147,51,234,0.2);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.header nav a:hover {
+  background: rgba(147,51,234,0.1);
+}
+
+/* Contenido */
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 20px;
+}

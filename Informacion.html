@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información Personal - Pablo Rene Us Martinez</title>
+  <!-- Conexión al CSS -->
+  <link rel="stylesheet" href="informacion.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>Información Personal</h1>
+      <nav>
+        <a href="index.html">← Regresar al Inicio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Datos Generales</h2>
+        <ul>
+          <li><strong>Nombre completo:</strong> Pablo Rene Us Martinez</li>
+          <li><strong>Edad:</strong> 15 años</li>
+          <li><strong>Grado:</strong> 3ro</li>
+          <li><strong>Sección:</strong> A</li>
+          <li><strong>Dirección:</strong> 20 calle 46-96, Zona 5, Ciudad de Guatemala</li>
+          <li><strong>Correo:</strong> renesitous@gmail.com</li>
+          <li><strong>Teléfono:</strong> +502 55966372</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un estudiante de tercero básico, interesado en aprender computacion
+          tecnología y temas relacionados con la matematcia. Me gusta trabajar 
+          en proyectos que me ayuden a crecer académica y personalmente.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pablo Rene Us Martinez</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
