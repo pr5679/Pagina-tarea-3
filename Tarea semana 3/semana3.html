@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semana 3 - Direccionamiento IPv4 y Segmentación</title>
+  <link rel="stylesheet" href="semana3.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>Semana 3</h1>
+      <nav>
+        <a href="index.html">← Regresar al Inicio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Tema visto</h2>
+        <p>
+          Durante esta semana trabajamos dos contenidos muy importantes para comprender cómo funciona el Internet y las redes:
+        </p>
+        <ul>
+          <li><strong>CD01:</strong> Direccionamiento IPv4 y estructura de IP.</li>
+          <li><strong>CD02:</strong> Técnicas de segmentación en redes.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>CD01: Direccionamiento IPv4 y estructura de IP</h2>
+        <p>
+          Aprendí que una dirección <strong>IPv4</strong> está compuesta por 32 bits, 
+          normalmente representados en 4 octetos separados por puntos, por ejemplo: <code>192.168.1.1</code>.
+        </p>
+        <p>
+          Estas direcciones se dividen en dos partes principales:
+        </p>
+        <ul>
+          <li><strong>Red:</strong> Identifica a qué red pertenece el dispositivo.</li>
+          <li><strong>Host:</strong> Identifica al dispositivo específico dentro de esa red.</li>
+        </ul>
+        <p>
+          También vimos las clases de direcciones (A, B, C, D y E) y la importancia de la máscara de subred.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CD02: Técnicas de segmentación en redes</h2>
+        <p>
+          La <strong>segmentación de redes</strong> consiste en dividir una red grande en partes más pequeñas llamadas <em>subredes</em>. 
+          Esto ayuda a organizar mejor el tráfico, mejorar la seguridad y optimizar el uso de las direcciones IP.
+        </p>
+        <p>
+          Las principales técnicas de segmentación que conocí fueron:
+        </p>
+        <ul>
+          <li><strong>Subredes:</strong> división lógica de una red en varias más pequeñas.</li>
+          <li><strong>VLANs:</strong> separación de dispositivos dentro de una misma red física en redes virtuales.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Reflexión personal</h2>
+        <p>
+          Me pareció un tema muy técnico pero fundamental. 
+          Entendí que las direcciones IPv4 son como "números de casa" en una ciudad, 
+          y la segmentación permite organizar las calles para que el tráfico de datos sea más ordenado y rápido.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pablo Rene Us Martinez</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

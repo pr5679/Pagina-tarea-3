@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semana 6 - TCP y UDP</title>
+  <link rel="stylesheet" href="semana6.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>Semana 6</h1>
+      <nav>
+        <a href="index.html">← Regresar al Inicio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Tema visto</h2>
+        <p>
+          Esta semana aprendimos sobre los protocolos <strong>TCP</strong> y <strong>UDP</strong>, fundamentales para la comunicación en redes.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CD01: Características y usos de TCP</h2>
+        <p>
+          <strong>TCP (Transmission Control Protocol)</strong> es un protocolo orientado a la conexión.  
+          Sus características principales son:
+        </p>
+        <ul>
+          <li>Garantiza que los datos lleguen completos y en orden.</li>
+          <li>Permite control de errores y retransmisión de paquetes perdidos.</li>
+          <li>Usado en aplicaciones que necesitan fiabilidad, como navegadores web, correo electrónico o transferencia de archivos.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>CD01: Características y usos de UDP</h2>
+        <p>
+          <strong>UDP (User Datagram Protocol)</strong> es un protocolo sin conexión.  
+          Sus características principales son:
+        </p>
+        <ul>
+          <li>No garantiza la entrega de paquetes ni el orden de los mismos.</li>
+          <li>Es más rápido que TCP al no realizar control de errores.</li>
+          <li>Usado en aplicaciones que requieren velocidad, como transmisión de video, juegos en línea o llamadas VoIP.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Reflexión personal</h2>
+        <p>
+          Esta semana entendí la diferencia entre protocolos confiables y rápidos.  
+          TCP es como enviar cartas certificadas: seguro pero más lento.  
+          UDP es como enviar mensajes rápidos: rápido pero sin garantía de que lleguen.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pablo Rene Us Martinez</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

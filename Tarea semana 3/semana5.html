@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semana 5 - Enrutamiento y Puerta de Enlace</title>
+  <link rel="stylesheet" href="semana5.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>Semana 5</h1>
+      <nav>
+        <a href="index.html">← Regresar al Inicio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Tema visto</h2>
+        <p>
+          Esta semana nos enfocamos en el concepto de <strong>enrutamiento</strong> y la función de la <strong>puerta de enlace</strong> en redes.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CD01: Concepto de enrutamiento</h2>
+        <p>
+          El <strong>enrutamiento</strong> es el proceso mediante el cual los datos viajan desde una red de origen hasta su destino, pasando por diferentes dispositivos intermedios llamados <em>routers</em>.
+        </p>
+        <p>
+          Gracias al enrutamiento, los paquetes de información encuentran la mejor ruta para llegar de manera eficiente y segura.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CD01: Función de la puerta de enlace</h2>
+        <p>
+          La <strong>puerta de enlace (gateway)</strong> es un dispositivo que conecta una red local con otra red, generalmente la red de Internet.  
+          Permite que los dispositivos dentro de la red puedan comunicarse con redes externas.
+        </p>
+        <p>
+          Sin la puerta de enlace, los dispositivos solo podrían comunicarse dentro de su propia red local.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Reflexión personal</h2>
+        <p>
+          Esta semana entendí que la puerta de enlace es como la “puerta de salida” de la red y que el enrutamiento es el camino que toman los datos para llegar a su destino.  
+          Aprendí que sin estos conceptos, la comunicación entre redes sería imposible.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pablo Rene Us Martinez</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
