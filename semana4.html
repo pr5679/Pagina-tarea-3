@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semana 4 - DHCP y ARP</title>
+  <link rel="stylesheet" href="semana4.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>Semana 4</h1>
+      <nav>
+        <a href="index.html">← Regresar al Inicio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Tema visto</h2>
+        <p>
+          Esta semana nos enfocamos en dos protocolos clave para la comunicación en redes:
+        </p>
+        <ul>
+          <li><strong>CD01:</strong> Protocolo DHCP y su uso en redes.</li>
+          <li><strong>CD02:</strong> Proceso ARP y su función en la comunicación de red.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>CD01: Protocolo DHCP</h2>
+        <p>
+          El <strong>DHCP (Dynamic Host Configuration Protocol)</strong> es un protocolo que asigna de manera automática 
+          direcciones IP y otros parámetros de red (como puerta de enlace y DNS) a los dispositivos que se conectan.
+        </p>
+        <p>
+          Gracias al DHCP no es necesario configurar manualmente cada computadora, lo que ahorra tiempo y evita errores.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CD02: Proceso ARP</h2>
+        <p>
+          El <strong>ARP (Address Resolution Protocol)</strong> se encarga de encontrar la dirección física 
+          (MAC Address) de un dispositivo a partir de su dirección IP.
+        </p>
+        <p>
+          Esto es esencial porque aunque los equipos se identifiquen con IPs, la comunicación en la red local 
+          ocurre a nivel de direcciones físicas (MAC).  
+        </p>
+        <p>
+          En otras palabras: ARP traduce la dirección IP en la dirección MAC correcta para que los datos lleguen al destino.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Reflexión personal</h2>
+        <p>
+          Comprendí que DHCP facilita mucho la administración de redes grandes 
+          y que ARP es como un "traductor" entre IP y MAC.  
+          Sin estos protocolos, la comunicación en red sería mucho más complicada y lenta.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pablo Rene Us Martinez</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
